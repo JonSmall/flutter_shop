@@ -59,10 +59,10 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  Future getHttp(String TypeText) async {
+  Future getHttp(String typeText) async {
     try {
       Response response;
-      var data = {'name': TypeText};
+      var data = {'name': typeText};
       response = await Dio().get(
           "https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/dabaojian",
           queryParameters: data);
