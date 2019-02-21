@@ -14,34 +14,35 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        resizeToAvoidBottomPadding: false,
-        appBar: AppBar(
-          title: Text('美好人间'),
-        ),
-        body: Container(
-          child: Column(
-            children: <Widget>[
-              TextField(
-                controller: typeController,
-                decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(10.0),
-                    labelText: '美女类型',
-                    helperText: '请输入你喜欢的类型'),
-                autofocus: false,
-              ),
-              RaisedButton(
-                onPressed: _choiceAction,
-                child: Text('选择完毕'),
-              ),
-              Text(
-                showText,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 1,
-              )
-            ],
+          // 技术胖是采用SingleChildScrollView解决键盘遮挡内容的问题的
+          // 经过测试，效果没有resizeToAvoidBottomPadding好
+          resizeToAvoidBottomPadding: false,
+          appBar: AppBar(
+            title: Text('美好人间'),
           ),
-        ),
-      ),
+          body: Container(
+            child: Column(
+              children: <Widget>[
+                TextField(
+                  controller: typeController,
+                  decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(10.0),
+                      labelText: '美女类型',
+                      helperText: '请输入你喜欢的类型'),
+                  autofocus: false,
+                ),
+                RaisedButton(
+                  onPressed: _choiceAction,
+                  child: Text('选择完毕'),
+                ),
+                Text(
+                  showText,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                )
+              ],
+            ),
+          )),
     );
   }
 
@@ -64,8 +65,8 @@ class _HomePageState extends State<HomePage> {
     try {
       Response response;
       var data = {'name': typeText};
-      response = await Dio().get(
-          "https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/dabaojian",
+      response = await Dio().post(
+          "https://www.easy-mock.com/mock/5c60131a4bed3a6342711498/baixing/post_dabaojian",
           queryParameters: data);
       return response.data;
     } catch (e) {
