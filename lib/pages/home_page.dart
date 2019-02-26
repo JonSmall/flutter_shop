@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
             var data = json.decode(snapshot.data.toString());
             List<Map> swiper = (data['data']['slides'] as List).cast();
             return Column(
-              children: <Widget>[SwiperDiy(swiperDateList: swiper)],
+              children: <Widget>[SwiperDiy(swiperDataList: swiper)],
             );
           } else {
             return Center(
@@ -48,8 +48,8 @@ class _HomePageState extends State<HomePage> {
 
 // 首页轮播组件
 class SwiperDiy extends StatelessWidget {
-  final List swiperDateList;
-  SwiperDiy({Key key, this.swiperDateList}) : super(key: key);
+  final List swiperDataList;
+  SwiperDiy({Key key, this.swiperDataList}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -57,7 +57,7 @@ class SwiperDiy extends StatelessWidget {
       child: Swiper(
         itemBuilder: (BuildContext context, int index) {
           return Image.network(
-            '${swiperDateList[index]['image']}',
+            '${swiperDataList[index]['image']}',
             fit: BoxFit.fill,
           );
         },
