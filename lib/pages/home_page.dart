@@ -3,6 +3,7 @@ import '../service/service_method.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'dart:convert';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,9 +24,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    print('设备像素密度：${ScreenUtil.pixelRatio}');
-    print('设备的高：${ScreenUtil.screenHeight}');
-    print('设备的宽：${ScreenUtil.screenWidth}');
+//    print('设备像素密度：${ScreenUtil.pixelRatio}');
+//    print('设备的高：${ScreenUtil.screenHeight}');
+//    print('设备的宽：${ScreenUtil.screenWidth}');
 
     return Scaffold(
       appBar: AppBar(
@@ -40,11 +41,14 @@ class _HomePageState extends State<HomePage> {
             List<Map> navigatorList = (data['data']['category'] as List).cast();
             String adPicture =
                 data['data']['advertesPicture']['PICTURE_ADDRESS'];
+            String leaderImage = data['data']['shopInfo']['leaderImage'];
+            String leaderPhone = data['data']['shopInfo']['leaderPhone'];
             return Column(
               children: <Widget>[
                 SwiperDiy(swiperDataList: swiper),
                 TopNavigator(navigatorList: navigatorList),
-                AdBanner(adPicture: adPicture)
+                AdBanner(adPicture: adPicture),
+                LeaderPhone(leaderImage: leaderImage, leaderPhone: leaderPhone),
               ],
             );
           } else {
@@ -82,6 +86,7 @@ class SwiperDiy extends StatelessWidget {
   }
 }
 
+// 顶部导航
 class TopNavigator extends StatelessWidget {
   final List navigatorList;
   TopNavigator({Key key, this.navigatorList}) : super(key: key);
@@ -122,6 +127,7 @@ class TopNavigator extends StatelessWidget {
   }
 }
 
+// 广告区域
 class AdBanner extends StatelessWidget {
   final String adPicture;
 
@@ -131,5 +137,30 @@ class AdBanner extends StatelessWidget {
     return Container(
       child: Image.network(adPicture),
     );
+  }
+}
+
+// 店长电话模块
+class LeaderPhone extends StatelessWidget {
+  final String leaderImage; // 店长图片
+  final String leaderPhone; // 店长电话
+  LeaderPhone({Key key, this.leaderImage, this.leaderPhone}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: InkWell(
+        onTap: _launchUrl,
+        child: Image.network(leaderImage),
+      ),
+    );
+  }
+
+  void _launchUrl() async {
+    String url = 'tel:' + leaderPhone;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'url不能进行访问，异常';
+    }
   }
 }
