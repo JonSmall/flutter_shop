@@ -10,7 +10,11 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
   String homePageContent = '正在获取数据';
   @override
   void initState() {
@@ -20,6 +24,7 @@ class _HomePageState extends State<HomePage> {
       });
     });
     super.initState();
+    print('111111111111111');
   }
 
   @override
@@ -202,8 +207,7 @@ class Recommend extends StatelessWidget {
         padding: EdgeInsets.all(8.0),
         decoration: BoxDecoration(
             color: Colors.white,
-            border:
-                Border(left: BorderSide(width: 0.5, color: Colors.black12))),
+            border: Border(left: BorderSide(width: 1, color: Colors.black12))),
         child: Column(
           children: <Widget>[
             Image.network(recommendList[index]['image']),
