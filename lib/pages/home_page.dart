@@ -128,6 +128,8 @@ class TopNavigator extends StatelessWidget {
       height: ScreenUtil().setHeight(330),
       padding: EdgeInsets.all(3.0),
       child: GridView.count(
+        // 解决顶部导航区域（GridView）与全局（SingleChildScrollView）的滑动冲突问题
+        physics: NeverScrollableScrollPhysics(),
         crossAxisCount: 5,
         padding: EdgeInsets.all(5.0),
         children: navigatorList.map((item) {
