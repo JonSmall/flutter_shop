@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import './pages/index_page.dart';
 import 'package:provide/provide.dart';
 import './provide/counter.dart';
 import './provide/child_category.dart';
+import 'animation/open_animation.dart';
 
 void main() {
   var counter = Counter();
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         title: '百姓生活+',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primaryColor: Colors.pink),
-        home: IndexPage(),
+        home: OpenAnimation(),
       ),
     );
   }
