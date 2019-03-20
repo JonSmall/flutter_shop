@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import '../pages/index_page.dart';
 
@@ -10,6 +12,11 @@ class _OpenAnimationState extends State<OpenAnimation>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation _animation;
+  List girlList = [
+    'https://ws1.sinaimg.cn/large/0065oQSqgy1fze94uew3jj30qo10cdka.jpg',
+    'https://ws1.sinaimg.cn/large/0065oQSqly1g04lsmmadlj31221vowz7.jpg',
+    'https://ws1.sinaimg.cn/large/0065oQSqly1g0ajj4h6ndj30sg11xdmj.jpg'
+  ];
 
   @override
   void initState() {
@@ -35,10 +42,11 @@ class _OpenAnimationState extends State<OpenAnimation>
 
   @override
   Widget build(BuildContext context) {
+    var girlRan = Random().nextInt(3);
     return FadeTransition(
       opacity: _controller,
       child: Image.network(
-        'https://ws1.sinaimg.cn/large/0065oQSqgy1fze94uew3jj30qo10cdka.jpg',
+        girlList[girlRan],
         fit: BoxFit.cover,
       ),
     );
