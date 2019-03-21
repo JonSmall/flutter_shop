@@ -78,15 +78,15 @@ class _HomePageState extends State<HomePage> {
                   LeaderPhone(
                       leaderImage: leaderImage, leaderPhone: leaderPhone),
                   Recommend(recommendList: recommendList),
-                  FloorTitle(picture_address: floor1Title),
+                  FloorTitle(pictureAddress: floor1Title),
                   FloorContent(
                     floorGoodsList: floor1,
                   ),
-                  FloorTitle(picture_address: floor2Title),
+                  FloorTitle(pictureAddress: floor2Title),
                   FloorContent(
                     floorGoodsList: floor2,
                   ),
-                  FloorTitle(picture_address: floor3Title),
+                  FloorTitle(pictureAddress: floor3Title),
                   FloorContent(
                     floorGoodsList: floor3,
                   ),
@@ -359,13 +359,13 @@ class Recommend extends StatelessWidget {
 
 // 楼层标题
 class FloorTitle extends StatelessWidget {
-  final String picture_address;
-  FloorTitle({Key key, this.picture_address}) : super(key: key);
+  final String pictureAddress;
+  FloorTitle({Key key, this.pictureAddress}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(8.0),
-      child: Image.network(picture_address),
+      child: Image.network(pictureAddress),
     );
   }
 }
