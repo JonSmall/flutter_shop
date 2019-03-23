@@ -13,6 +13,7 @@
 - 解决顶部导航区域（GridView）与全局（SingleChildScrollView）的滑动冲突问题  
 - 去掉多余的AutomaticKeepAliveClientMixin。IndexedStack可以保持状态  
 - 保存请求接口返回的数据，供参考学习  
+- 使用Expanded让ListView撑满父控件  
 
 ## 额外福利  
 - **胖哥开车额外福利_闪屏小姐姐**  
