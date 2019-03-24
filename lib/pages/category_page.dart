@@ -127,6 +127,7 @@ class RightCategoryNav extends StatefulWidget {
   _RightCategoryNavState createState() => _RightCategoryNavState();
 }
 
+// 小类右侧导航
 class _RightCategoryNavState extends State<RightCategoryNav> {
 //  List list = ['名酒', '宝丰', '北京二锅头', '舍得', '五粮液', '茅台', '散白'];
   @override
@@ -144,7 +145,8 @@ class _RightCategoryNavState extends State<RightCategoryNav> {
             scrollDirection: Axis.horizontal,
             itemCount: childCategory.childCategoryList.length,
             itemBuilder: (context, index) {
-              return _rightInkWell(childCategory.childCategoryList[index]);
+              return _rightInkWell(
+                  index, childCategory.childCategoryList[index]);
             },
           ),
         );
@@ -152,14 +154,23 @@ class _RightCategoryNavState extends State<RightCategoryNav> {
     );
   }
 
-  Widget _rightInkWell(BxMallSubDto item) {
+  Widget _rightInkWell(int index, BxMallSubDto item) {
+    bool isClick = false;
+    isClick = (index == Provide.value<ChildCategory>(context).childIndex)
+        ? true
+        : false;
+
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Provide.value<ChildCategory>(context).changeChildIndex(index);
+      },
       child: Container(
         padding: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 10.0),
         child: Text(
           item.mallSubName,
-          style: TextStyle(fontSize: ScreenUtil().setSp(28)),
+          style: TextStyle(
+              fontSize: ScreenUtil().setSp(28),
+              color: isClick ? Colors.pink : Colors.black),
         ),
       ),
     );
@@ -185,7 +196,6 @@ class _CategoryGoodsListState extends State<CategoryGoodsList> {
         return Expanded(
           child: Container(
             width: ScreenUtil().setWidth(570),
-            height: MediaQuery.of(context).size.height,
             child: ListView.builder(
                 itemCount: data.goodsList.length,
                 itemBuilder: (context, index) {
