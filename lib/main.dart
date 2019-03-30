@@ -5,6 +5,7 @@ import './provide/counter.dart';
 import './provide/child_category.dart';
 import './provide/category_goods_list.dart';
 import 'animation/open_animation.dart';
+import 'package:fluro/fluro.dart';
 
 void main() {
   var counter = Counter();
