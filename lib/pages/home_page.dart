@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import '../routers/application.dart';
+import '../routers/routes.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -131,8 +132,8 @@ class _HomePageState extends State<HomePage> {
       List<Widget> listWidget = hotGoodsList.map((val) {
         return InkWell(
           onTap: () {
-            Application.router
-                .navigateTo(context, '/detail?id=${val['goodsId']}');
+            Application.router.navigateTo(
+                context, '${Routes.detailPage}?id=${val['goodsId']}');
           },
           child: Container(
             width: ScreenUtil().setWidth(372),
