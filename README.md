@@ -16,7 +16,19 @@
 - 使用Expanded让ListView撑满父控件  
 
 ## 额外福利  
-- **胖哥开车额外福利_闪屏小姐姐**  
+- **胖哥开车之Splash闪屏小姐姐**  
+
+## 第三方库  
+| 序号 | 库名称 | 简介 | 备注 |
+| --- | --- | --- | --- |
+| 1 | **dio** | 网络请求框架 | [Github地址](https://github.com/flutterchina/dio) |
+| 2 | **flutter_swiper** | 轮播组件 | [Github地址](https://github.com/best-flutter/flutter_swiper) |
+| 3 | **flutter_screenutil** | 屏幕适配方案 |[Github地址](https://github.com/OpenFlutter/flutter_screenutil)  |
+| 4 | **url_launcher** | url_launcher | [Github地址](https://github.com/flutter/plugins/tree/master/packages/url_launcher) |
+| 5 | **flutter_easyrefresh** | 上拉加载 | [Github地址](https://github.com/xuelongqy/flutter_easyrefresh) |
+| 6 | **provide** | 状态管理 | [Github地址](https://github.com/google/flutter-provide) |
+| 7 | **fluttertoast** | Toast | [Github地址](https://github.com/PonnamKarthik/FlutterToast) |
+| 8 | **fluro** | 路由配置 | [Github地址](https://github.com/theyakka/fluro) |
 
 ## 应用截图
 | ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/FwPhXOlZ6DgtYpkTjDO0YVRuO2hhA8p9qqdQKPTLma8!/b/dDEBAAAAAAAA&bo=gAJpBTwDAAcDSbo!&rf=viewer_4) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/uDxDYQsWMhLEo7kSwBz3LBqmIKHTDo2ZdH8rh68inXg!/b/dL4AAAAAAAAA&bo=gAJpBTwDAAcDOco!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/*XgqVTtSIJkhx9O2d7CwtdRS8DqHZoP6GR8ipmnKSZ8!/b/dLwAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/TuYk8mcPzbg4OyjIKuVRY*S62S8AHBITsEkwDSbjH0Y!/b/dLkAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) |  
