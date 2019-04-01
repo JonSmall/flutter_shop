@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/build-passing-52C434.svg">
+  <img src="https://img.shields.io/badge/version-0.4.1-52C434.svg">
+  <img src="https://img.shields.io/badge/flutterSdk-1.2.1-red.svg">
+  <img src="https://img.shields.io/badge/language-dart2.2.0-blue.svg">
+</p>
+
 # 进度
 代码已追新至**41集**完结  
 
@@ -34,8 +41,4 @@
 | ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/FwPhXOlZ6DgtYpkTjDO0YVRuO2hhA8p9qqdQKPTLma8!/b/dDEBAAAAAAAA&bo=gAJpBTwDAAcDSbo!&rf=viewer_4) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/uDxDYQsWMhLEo7kSwBz3LBqmIKHTDo2ZdH8rh68inXg!/b/dL4AAAAAAAAA&bo=gAJpBTwDAAcDOco!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/*XgqVTtSIJkhx9O2d7CwtdRS8DqHZoP6GR8ipmnKSZ8!/b/dLwAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/TuYk8mcPzbg4OyjIKuVRY*S62S8AHBITsEkwDSbjH0Y!/b/dLkAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) |  
 | :--: | :--: | :--: | :--: |  
 | 首页 | 分类 | 购物车 | 会员中心 |  
-
-## 环境
-- Dart 2.2.0  
-- Flutter 1.2.1  
 
