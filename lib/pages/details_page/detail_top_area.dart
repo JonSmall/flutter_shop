@@ -8,8 +8,15 @@ class DetailsTopArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Provide<DetailsInfoProvide>(
       builder: (context, child, val) {
-        var goodsInfo =
-            Provide.value<DetailsInfoProvide>(context).goodsInfo.data.goodInfo;
+        var goodsInfo;
+        try {
+          goodsInfo = Provide.value<DetailsInfoProvide>(context)
+              .goodsInfo
+              .data
+              .goodInfo;
+        } catch (e) {
+          print('进入页面第一次初始化：${e}');
+        }
         if (goodsInfo != null) {
           return Container(
             color: Colors.white,
