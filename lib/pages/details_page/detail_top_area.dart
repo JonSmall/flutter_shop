@@ -15,7 +15,7 @@ class DetailsTopArea extends StatelessWidget {
               .data
               .goodInfo;
         } catch (e) {
-          print('进入页面第一次初始化：${e}');
+          print('进入页面第一次初始化：$e');
         }
         if (goodsInfo != null) {
           return Container(
