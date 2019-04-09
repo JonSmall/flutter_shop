@@ -37,7 +37,7 @@
 | 7 | **fluttertoast** | Toast | [Github地址](https://github.com/PonnamKarthik/FlutterToast) |
 | 8 | **fluro** | 路由配置 | [Github地址](https://github.com/theyakka/fluro) |
 | 9 | **flutter_html** | html加载 | [Github地址](https://github.com/Sub6Resources/flutter_html) |
-| 10 | **shared_preferences** | html加载 | [Github地址](https://github.com/flutter/plugins/tree/master/packages/shared_preferences) |
+| 10 | **shared_preferences** | 持久化存储 | [Github地址](https://github.com/flutter/plugins/tree/master/packages/shared_preferences) |
 
 ## 应用截图
 | ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/FwPhXOlZ6DgtYpkTjDO0YVRuO2hhA8p9qqdQKPTLma8!/b/dDEBAAAAAAAA&bo=gAJpBTwDAAcDSbo!&rf=viewer_4) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/uDxDYQsWMhLEo7kSwBz3LBqmIKHTDo2ZdH8rh68inXg!/b/dL4AAAAAAAAA&bo=gAJpBTwDAAcDOco!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/*XgqVTtSIJkhx9O2d7CwtdRS8DqHZoP6GR8ipmnKSZ8!/b/dLwAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/TuYk8mcPzbg4OyjIKuVRY*S62S8AHBITsEkwDSbjH0Y!/b/dLkAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) |  
