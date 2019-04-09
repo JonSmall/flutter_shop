@@ -1,12 +1,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-52C434.svg">
-  <img src="https://img.shields.io/badge/version-0.4.9-52C434.svg">
+  <img src="https://img.shields.io/badge/version-0.5.0-52C434.svg">
   <img src="https://img.shields.io/badge/flutterSdk-1.2.1-red.svg">
   <img src="https://img.shields.io/badge/language-dart2.2.0-blue.svg">
 </p>
 
 # 进度
-代码已追新至**49集**完结  
+代码已追新至**50集**完结  
 
 ## 介绍
 嗨，小伙伴们，大家好！我是技术胖的粉丝！跟着[技术胖](https://jspang.com/)学习《电商实战》。及时追新代码，额外赠送福利！  
@@ -37,6 +37,7 @@
 | 7 | **fluttertoast** | Toast | [Github地址](https://github.com/PonnamKarthik/FlutterToast) |
 | 8 | **fluro** | 路由配置 | [Github地址](https://github.com/theyakka/fluro) |
 | 9 | **flutter_html** | html加载 | [Github地址](https://github.com/Sub6Resources/flutter_html) |
+| 10 | **shared_preferences** | html加载 | [Github地址](https://github.com/flutter/plugins/tree/master/packages/shared_preferences) |
 
 ## 应用截图
 | ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/FwPhXOlZ6DgtYpkTjDO0YVRuO2hhA8p9qqdQKPTLma8!/b/dDEBAAAAAAAA&bo=gAJpBTwDAAcDSbo!&rf=viewer_4) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/uDxDYQsWMhLEo7kSwBz3LBqmIKHTDo2ZdH8rh68inXg!/b/dL4AAAAAAAAA&bo=gAJpBTwDAAcDOco!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/*XgqVTtSIJkhx9O2d7CwtdRS8DqHZoP6GR8ipmnKSZ8!/b/dLwAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/TuYk8mcPzbg4OyjIKuVRY*S62S8AHBITsEkwDSbjH0Y!/b/dLkAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) |  
