@@ -43,7 +43,7 @@ class CartItem extends StatelessWidget {
   // 商品图片
   Widget _cartImage() {
     return Container(
-      width: ScreenUtil().setWidth(150),
+      width: ScreenUtil().setWidth(140),
       padding: EdgeInsets.all(3.0),
       decoration: BoxDecoration(
         border: Border.all(
