@@ -1,12 +1,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-52C434.svg">
-  <img src="https://img.shields.io/badge/version-0.5.6-52C434.svg">
+  <img src="https://img.shields.io/badge/version-0.5.7-52C434.svg">
   <img src="https://img.shields.io/badge/flutterSdk-1.2.1-red.svg">
   <img src="https://img.shields.io/badge/language-dart2.2.0-blue.svg">
 </p>
 
 # 进度
-代码已追新至**56集**完结  
+代码已追新至**57集**完结  
 
 ## 介绍
 嗨，小伙伴们，大家好！我是技术胖的粉丝！跟着[技术胖](https://jspang.com/)学习《电商实战》。及时追新代码，额外赠送福利！  

@@ -28,15 +28,16 @@ class CartProvide with ChangeNotifier {
         'goodsName': goodsName,
         'count': count,
         'price': price,
-        'images': images
+        'images': images,
+        'isCheck': true,
       };
       tempList.add(newGoods);
       cartList.add(CartInfoModel.fromJson(newGoods));
     }
 
     cartString = json.encode(tempList).toString();
-    print('字符串>>>>>>>>>>>>>>>>$cartString');
-    print('数据模型>>>>>>>>>>>>>>>>$cartList');
+    // print('字符串>>>>>>>>>>>>>>>>$cartString');
+    // print('数据模型>>>>>>>>>>>>>>>>$cartList');
 
     prefs.setString('cartInfo', cartString);
     notifyListeners();
