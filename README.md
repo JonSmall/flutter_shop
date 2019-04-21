@@ -1,5 +1,12 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/build-passing-52C434.svg">
+  <img src="https://img.shields.io/badge/version-0.6.4-52C434.svg">
+  <img src="https://img.shields.io/badge/flutterSdk-1.2.1-red.svg">
+  <img src="https://img.shields.io/badge/language-dart2.2.0-blue.svg">
+</p>
+
 # 进度
-代码已追新至**29集**完结  
+代码已追新至**64集**完结  
 
 ## 介绍
 嗨，小伙伴们，大家好！我是技术胖的粉丝！跟着[技术胖](https://jspang.com/)学习《电商实战》。及时追新代码，额外赠送福利！  
@@ -13,16 +20,27 @@
 - 解决顶部导航区域（GridView）与全局（SingleChildScrollView）的滑动冲突问题  
 - 去掉多余的AutomaticKeepAliveClientMixin。IndexedStack可以保持状态  
 - 保存请求接口返回的数据，供参考学习  
+- 使用Expanded让ListView撑满父控件  
 
 ## 额外福利  
-- **胖哥开车额外福利_闪屏小姐姐**  
+- **胖哥开车之Splash闪屏小姐姐**  
+
+## 第三方库  
+| 序号 | 库名称 | 简介 | 备注 |
+| --- | --- | --- | --- |
+| 1 | **dio** | 网络请求框架 | [Github地址](https://github.com/flutterchina/dio) |
+| 2 | **flutter_swiper** | 轮播组件 | [Github地址](https://github.com/best-flutter/flutter_swiper) |
+| 3 | **flutter_screenutil** | 屏幕适配方案 |[Github地址](https://github.com/OpenFlutter/flutter_screenutil)  |
+| 4 | **url_launcher** | url_launcher | [Github地址](https://github.com/flutter/plugins/tree/master/packages/url_launcher) |
+| 5 | **flutter_easyrefresh** | 上拉加载 | [Github地址](https://github.com/xuelongqy/flutter_easyrefresh) |
+| 6 | **provide** | 状态管理 | [Github地址](https://github.com/google/flutter-provide) |
+| 7 | **fluttertoast** | Toast | [Github地址](https://github.com/PonnamKarthik/FlutterToast) |
+| 8 | **fluro** | 路由配置 | [Github地址](https://github.com/theyakka/fluro) |
+| 9 | **flutter_html** | html加载 | [Github地址](https://github.com/Sub6Resources/flutter_html) |
+| 10 | **shared_preferences** | 持久化存储 | [Github地址](https://github.com/flutter/plugins/tree/master/packages/shared_preferences) |
 
 ## 应用截图
-| ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/GPHn8YAWNnuJEvqFRBT9TLgiwTsPq476O.kSObdKYpg!/b/dIUBAAAAAAAA&bo=OASABzgEgAcRCT4!&rf=viewer_4&t=5) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/wWEZeVXGCvkoxrtTB5kxL.VM7ENkWf3mJRhi6VWFEN8!/b/dLYAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/Ma.J7KDGRL8pdfcyCHj5G1GOekV.9jGqh.y1dTZSdJo!/b/dLYAAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/XaHuwWhFuiT*CsH3kSZr3bWYLZZMNfngKeokXDE*rdI!/b/dL8AAAAAAAAA&bo=gAJpBTwDAAcDGeo!&rf=viewer_4) |  
+| ![1](http://m.qpic.cn/psb?/V112qmTd0F9ydX/o*IN3xte3ER0luww435L3w2r3ezXuakKfKTMu7p1f.M!/b/dIsBAAAAAAAA&bo=7gI2Be4CNgUDSWw!&rf=viewer_4) | ![2](http://m.qpic.cn/psb?/V112qmTd0F9ydX/B2TwiOvESTwKp9KI6m*jRrGZ*N4ko6.9hpLg3StycgQ!/b/dIIBAAAAAAAA&bo=7gI2Be4CNgUDORw!&rf=viewer_4) | ![3](http://m.qpic.cn/psb?/V112qmTd0F9ydX/KX7i3f23t.zclj1rrb8OKULxVO.8k3bIozbaei3VBe0!/b/dIoBAAAAAAAA&bo=7gI2Be4CNgUDKQw!&rf=viewer_4) | ![4](http://m.qpic.cn/psb?/V112qmTd0F9ydX/02BwW0Rt59fRpE.jqqKM.DZvLv.7fR7lyWbDOUdEGuM!/b/dPQAAAAAAAAA&bo=7gI2Be4CNgUDGTw!&rf=viewer_4) |  
 | :--: | :--: | :--: | :--: |  
 | 首页 | 分类 | 购物车 | 会员中心 |  
-
-## 环境
-- Dart 2.2.0  
-- Flutter 1.2.1  
 
